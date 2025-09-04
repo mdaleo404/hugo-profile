@@ -21,6 +21,7 @@
 <!-- Show header on scroll up -->
 {{ if .Site.Params.navbar.stickyNavBar.enable | default false }}
 {{ $showNavBarOnScrollUp := .Site.Params.navbar.stickyNavBar.showOnScrollUp | default false }}
+{{ $showNavBarOnScrollDown := .Site.Params.navbar.stickyNavBar.showOnScrollDown | default false }}
 <script>
     var prevScrollPos = window.pageYOffset;
     window.addEventListener("scroll", function showHeaderOnScroll() {
@@ -98,7 +99,7 @@
                     <li class="nav-item navbar-text">
                         <a class="nav-link" href="{{ .Site.BaseURL | relURL }}#experience"
                             aria-label="experience">
-                            {{ .Site.Params.experience.title | default "Experience" }}
+                            {{ .Site.Params.experience.title | default "Services" }}
                         </a>
                     </li>
                     {{ end }}
