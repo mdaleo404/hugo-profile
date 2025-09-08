@@ -104,7 +104,7 @@
                     </li>
                     {{ end }}
 
-                    {{ if and (.Site.Params.services.enable | default false) (not (.Site.Params.navbar.menus.disableservices | default false)) }}
+                    {{ if and (.Site.Params.services.enable | default false) (not (.Site.Params.navbar.menus.disableServices | default false)) }}
                     <li class="nav-item navbar-text">
                         <a class="nav-link" href="{{ .Site.BaseURL | relURL }}#services"
                             aria-label="services">
