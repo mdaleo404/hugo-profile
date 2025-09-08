@@ -383,7 +383,7 @@ header .navbar.animate {
     opacity: 0.7;
 }
 
-/* Education */
+/* Services */
 
 #services .container > h3 {
     color: var(--text-secondary-color) !important;
@@ -430,7 +430,7 @@ header .navbar.animate {
     border: 2px solid var(--primary-color) !important;
 }
 
-#services .card .card-body .education-content a {
+#services .card .card-body .services-content a {
     color: var(--text-link-color) !important;
     text-decoration: none;
     opacity: 0.9;
